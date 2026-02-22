@@ -7,7 +7,7 @@ import { Core } from "./cores"
 export const FromCollection = () => {
   const [game, setGame] = useState<Game>(games[0])
   const coreUrl = `/cores/${game.core}_libretro.js`
-//  const coreUrl = `https://cdn.jsdelivr.net/gh/dimitrikarpov/retroarch-js/packages/retroarch-core/cores/${game.core}_libretro.js`
+  const coreUrl = `https://cdn.jsdelivr.net/gh/dimitrikarpov/retroarch-js/packages/retroarch-core/cores/${game.core}_libretro.js`
   const romUrl = `/${game.rom}`
 
   return (
