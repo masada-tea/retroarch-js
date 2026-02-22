@@ -1,0 +1,14 @@
+[build]
+  base    = "."
+  command = "npm ci && npx turbo run build --filter=retroarch-react... && npm run build:ghpages --workspace=examples/demo-retroarch-react-2"
+  publish = "examples/demo-retroarch-react-2/dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# SharedArrayBuffer に必要なヘッダー（GitHub Pagesでは不可能だったやつ）
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy   = "same-origin"
+    Cross-Origin-Embedder-Policy = "require-corp"
