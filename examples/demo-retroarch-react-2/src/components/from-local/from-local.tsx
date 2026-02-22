@@ -8,7 +8,8 @@ export const FromLocal = () => {
   const [rom, setRom] = useState<Uint8Array>()
   const [core, setCore] = useState<Core>(cores[0])
 
-  const coreUrl = `https://cdn.jsdelivr.net/gh/dimitrikarpov/retroarch-js/packages/retroarch-core/cores/${core}_libretro.js`
+  const coreUrl = `/cores/${game.core}_libretro.js`
+  //const coreUrl = `https://cdn.jsdelivr.net/gh/dimitrikarpov/retroarch-js/packages/retroarch-core/cores/${core}_libretro.js`
 
   const onRomUpload = async (e: ChangeEvent<HTMLInputElement>) => {
     if (!e.target.files?.[0]) return
