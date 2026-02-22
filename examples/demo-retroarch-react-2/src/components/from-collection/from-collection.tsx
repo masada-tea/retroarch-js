@@ -2,6 +2,7 @@ import { useState } from "react"
 import { games, type Game } from "./games"
 import { GameSelect } from "./game-select"
 import { Emulator } from "./emulator"
+import { Core } from "./cores"
 
 export const FromCollection = () => {
   const [game, setGame] = useState<Game>(games[0])
