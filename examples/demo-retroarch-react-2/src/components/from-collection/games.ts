@@ -13,7 +13,7 @@ export const games = [
     core: "genesis_plus_gx",
   },
   {
-    rom: "Black_Jewel_Reborn_Demo_v020.bin",
+    rom: "test.mkxpz",
     core: "mkxp-z",
   },
 ]
