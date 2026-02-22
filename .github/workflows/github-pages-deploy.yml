@@ -42,7 +42,7 @@ jobs:
         working-directory: ./examples/demo-retroarch-react-2
 
       - name: Build packages  # ← これを追加
-        run: npx turbo run build --filter=retroarch-react...
+        run: npx turbo@v1 run build --filter=retroarch-react...
         # または単純に
         # run: npx turbo run build
 
