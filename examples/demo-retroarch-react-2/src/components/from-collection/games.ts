@@ -12,6 +12,10 @@ export const games = [
     rom: "Black_Jewel_Reborn_Demo_v020.bin",
     core: "genesis_plus_gx",
   },
+  {
+    rom: "Black_Jewel_Reborn_Demo_v020.bin",
+    core: "mkxp-z",
+  },
 ]
 
 export type Game = (typeof games)[0]
